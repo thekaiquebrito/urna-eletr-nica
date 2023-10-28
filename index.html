@@ -5,36 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna Eletrônica</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/candidatos.js"></script>
 </head>
 <body>
+
+    <div class="models">
+        <div class="voto-confirmado">voto confirmado</div>
+        <div class="voto-branco">voto em branco</div>
+        <div class="confirmar-voto">
+            <strong class="cargo">VEREADOR</strong>
+            <div class="vereador">
+                <img src="/img/Group-1.svg" alt="">
+                <div class="info-candidato">
+                    <div class="nome-candidato"></div>
+                    <div class="partido-candidato"></div>
+                </div>
+            </div>
+            <strong class="cargo">PREFEITO</strong>
+            <div class="prefeito">
+                <img src="/img/Group-2.svg" alt="">
+                <div class="info-candidato">
+                    <div class="nome-candidato"></div>
+                    <div class="partido-candidato"></div>
+                </div>
+            </div>
+            <div class="text">Clique no botão CONFIRMA se as escolhas foram feitas corretamente, senão pressione CORRIGE</div>
+        </div>
+    </div>
+
     <main class="urna">
         <div class="tela">
             <div class="cargo">Vereador(a)</div>
             <div class="numeros-cargo">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                
+            </div>
+            <div class="foto">
+                <img src="" alt="">
+            </div>
+            <div class="candidato">
+                <div class="nome-container">
+                    Nome: <strong class="nome"></strong>
+                </div>
+                <div class="partido-container">
+                    Partido: <strong class="partido"></strong>
+                </div>
             </div>
         </div>
         <div class="teclado">
             <div class="numeros">
-                <div class="num">9</div>
-                <div class="num">8</div>
-                <div class="num">7</div>
-                <div class="num">6</div>
-                <div class="num">5</div>
-                <div class="num">4</div>
-                <div class="num">3</div>
-                <div class="num">2</div>
-                <div class="num">1</div>
-                <div class="num">0</div>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="num">0</button>
             </div>
             <div class="botoes">
-                <div class="branco">branco</div>
-                <div class="corrige">corrige</div>
-                <div class="confirma">confirma</div>
+                <button class="branco">branco</button>
+                <button class="corrige">corrige</button>
+                <button class="confirma">confirma</button>
             </div>
         </div>
     </main>

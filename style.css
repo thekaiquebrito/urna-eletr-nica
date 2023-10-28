@@ -15,6 +15,12 @@
     --preto: #2C2C2C;
     font-family: Arial, Helvetica, sans-serif;
 }
+.flex {
+    display: flex;
+}
+button {
+    cursor: pointer;
+}
 
 .urna {
     display: flex;
@@ -90,6 +96,8 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    position: relative;
+    padding: 30px;
 }
 .cargo {
     font-size: 50px;
@@ -103,4 +111,77 @@
     border: 2px solid;
     width: 60px;
     height: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.foto {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #2C2C2C;
+    width: 300px;
+    height: 300px;
+    place-items: center;
+    display: none;
+}
+.foto img {
+    height: 100%;
+}
+
+.candidato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.voto-confirmado, .voto-branco {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--verde);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.voto-branco {
+    background-color: #fff;
+    color: #000;
+}
+
+.confirmar-voto {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.vereador, .prefeito {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vereador img, .prefeito img {
+    background-color: #2C2C2C;
+    padding: 30px;
+}
+
+.text {
+    font-size: 18px;
+    color: #f00;
 }
